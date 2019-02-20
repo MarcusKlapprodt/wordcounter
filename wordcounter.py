@@ -20,3 +20,13 @@ for word, number in d.items():
 for i in range(0,5):
     print(pq.get())
 
+## Export the outpunt in a pdf file
+
+
+## show the total number of words
+
+## show the total number of characters
+
+## show the top 20 words used and their count
+
+
