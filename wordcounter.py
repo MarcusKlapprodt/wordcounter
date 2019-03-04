@@ -42,6 +42,7 @@ class PDF(FPDF):
         self.cell(80)
         self.cell(30,10, "Wordcounter", 0, 1, "C")
         self.ln(20)
+
     def body(self):
         self.add_page()
         # Outputs the total Number of words
@@ -61,7 +62,7 @@ class PDF(FPDF):
         self.cell(30, 10, "Top 10 words: ", 0, 1, "L")
         self.set_font("Arial", "", 14)
         for i in range(0, 10):
-            self.cell(30, 10, "Word:     '" + str(pq.get()[1]) + "'     "+str(int(-1* pq.get()[0])) + " times", 0, 1, "L")
+            self.cell(30, 10, str(pq.get()[1]) + ":   "+str(int(-1* pq.get()[0])) + " times", 0, 1, "L")
 
 
 pdf = PDF("P", "mm", "A4")
