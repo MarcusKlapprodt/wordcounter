@@ -40,7 +40,7 @@ class PDF(FPDF):
     def header(self):
         self.set_font("Arial", "B", 21)
         self.cell(80)
-        self.cell(30,10, "Wordcounter", 0, 1, "C")
+        self.cell(30,10, "Wordcounter for " + textfile.name, 0, 1, "C")
         self.ln(20)
 
     def body(self):
